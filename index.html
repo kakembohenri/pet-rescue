@@ -2,6 +2,11 @@
  <html>
  	<head>
  		<style>
+			*{
+				padding:0;
+				margin:0;
+				box-sizing: border-box;
+			}
  			.banner {
  				height:600px;
  				background-image: url("https://img.freepik.com/free-photo/beautiful-cute-girl-blue-dresses-with-beautiful-hairstyles-make-up-sitting_1157-14083.jpg?w=900&t=st=1702108676~exp=1702109276~hmac=92c7a0aca3afe946a732855fd9cbc94b677ff2eed409a0fe7ea3f11df6ae1779");
@@ -21,12 +26,19 @@
  			.services {
  				height:auto;
  				position: relative;
- 				margin-top: 0px;
 
  			}
 
- 			.services div  {
- 				border:1px solid grey;
+			/* section{
+				margin: 40px 0;
+			} */
+
+			.row{
+				margin:0 !important;
+			}
+
+ 			.services div.col-4  {
+ 				border:1px solid gray;
  				padding:30px;
  			}
 
@@ -59,7 +71,8 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
  	</head>
  	<body>
- 		<div class="container">
+ 		<!-- <div class="container"> -->
+ 		<div>
  		<header>
  			<section class="menu">
 				<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -71,7 +84,7 @@
 				    <div class="collapse navbar-collapse" id="navbarScroll">
 				      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
 				        <li class="nav-item">
-				          <a class="nav-link active" aria-current="page" href="#">Home</a>
+				          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
 				        </li>
 				        <li class="nav-item">
 				          <a class="nav-link" href="#">About</a>
@@ -92,59 +105,81 @@
  		<main>
  			<!-- BANNER -->
  			<section class="banner row">
- 				<div class="col-6">
- 					<div class="title">
- 					<h2>Reach Your Hand To Welfare Abandoned Animals Out There</h2>
- 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
- 					<button class="btn btn-danger" type="submit">Get Started</button>
- 					</div>
- 				</div>
+				<div class="container">
+					<div class="col-6">
+						<div class="title">
+						<h2>Reach Your Hand To Welfare Abandoned Animals Out There</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+						<button class="btn btn-danger" type="submit">Get Started</button>
+						</div>
+					</div>
+				</div>
  				<div class="col-6"></div>
  			</section>
 
  			<!-- SERVICES -->
- 			<section class="services row">
- 				<div class="col-4">
- 					<span class="icon row">
- 						<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" color="#d9534f" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16"><path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/></svg>
- 					</span>
- 					<span class="service t20 row"><h3>Pet Donations </h3></span>
- 					<span class="desc row">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor</span>
- 				</div>
- 				<div class="col-4">
- 					<span class="icon row">
- 						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ambulance" width="50" height="50" color="#d9534f" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none"/> <circle cx="7" cy="17" r="2" /> <circle cx="17" cy="17" r="2" /> <path d="M5 17h-2v-11a1 1 0 0 1 1 -1h9v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5" /> <path d="M6 10h4m-2 -2v4" /> </svg>
- 					</span>
- 					<span class="service t20 row"><h3>Animal Rescue </h3></span>
- 					<span class="desc row">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor</span>
- 				</div>
- 				<div class="col-4">
- 					<span class="icon row">
- 						<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" color="#d9534f" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16"><path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/></svg>
- 					</span>
- 					<span class="service t20 row"><h3>Adopt Animal </h3></span>
- 					<span class="desc row">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor</span>
- 				</div>
+ 			<section class="services" style="margin: 40px 0;">
+				<div class="container">
+					<div class="row">
+						<div class="col-4">
+							<span class="icon row">
+								<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" color="#d9534f" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16"><path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/></svg>
+							</span>
+							<span class="service t20 row"><h3>Pet Donations </h3></span>
+							<div class="desc row">
+								<p>Email: donations@fourpawsuganda.org</p>
+								<p>Phone: +256-704936520</p>
+							</div>
+						</div>
+						<div class="col-4">
+							<span class="icon row">
+								<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ambulance" width="50" height="50" color="#d9534f" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none"/> <circle cx="7" cy="17" r="2" /> <circle cx="17" cy="17" r="2" /> <path d="M5 17h-2v-11a1 1 0 0 1 1 -1h9v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5" /> <path d="M6 10h4m-2 -2v4" /> </svg>
+							</span>
+							<span class="service t20 row"><h3>Animal Rescue </h3></span>
+							<span class="desc row">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor</span>
+						</div>
+						<div class="col-4">
+							<span class="icon row">
+								<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" color="#d9534f" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16"><path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/></svg>
+							</span>
+							<span class="service t20 row"><h3>Adopt Animal </h3></span>
+							<div class="desc row">
+								<p>
+									Adoption Coordinator: adopt@fourpawsuganda.org
+								</p> 
+								<p>
+									Phone: +256-704936520
+								</p>
+								<p>
+									Visit Us: Plot 10 kyadondo Road, P.O Box 21073 kampala Uganda
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
  			</section>
  			
 
  			<!-- ABOUT -->
- 			<section class="about row">
- 				<div class="col-6">
- 				<span class="ab-title row">About 4PAWS</span>
- 					<span class="heading t20 row"><h3>We're The World's Most Trusted Animal Rescue</h3></span>
- 					<span class="desc row">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit.</span>
- 				<div class="col-6"></div>
-
+ 			<section class="about row" style="margin: 40px 0;">
+ 				<div class="container">
+ 					<h3 class="ab-title row">About 4PAWS</h3>
+ 					<!-- <span class="heading t20 row"><h3>We're The World's Most Trusted Animal Rescue</h3></span>
+ 					<span class="desc row">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit.</span> -->
+					<p>FourPaws Uganda stands as a beacon of compassion and dedication in the realm of animal welfare. Established in 2017, the organization has been at the forefront of rescuing, rehabilitating, and rehoming animals in need across Uganda. Their mission extends beyond the physical well-being of animals to fostering a community that values and respects the lives of every creature.</p>
+					<p>Founded by Dr Mutyaba Ashraf, FourPaws Uganda has evolved into a prominent player in the field, collaborating with local communities, volunteers, and stakeholders to create a lasting impact on the lives of animals. The organization's commitment to responsible pet ownership, education, and advocacy has garnered widespread support and recognition.</p>
+ 				<!-- <div class="col-6"></div> -->
+				</div>
  			</section>
 
- 			<section class="contact row">
- 				<span class=" row ab-title text-center"><h5  class="text-center">Lets Care for Each Other</h5></span>
+ 			<section class="contact row" style="margin: 40px 0;">
+				<div class="container">
+ 					<span class=" row ab-title text-center"><h5  class="text-center">Lets Care for Each Other</h5></span>
  					<span class=" row heading t20"><h3  class="text-center">Contact Us If You Find Abandoned Animals</h3></span>
  					<span class=" row desc"><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm tempor incididunt ut labore et dolore magna aliqua.</p> </span>
 
  					<span class="row"><button class="btn btn-danger" type="submit">(+256)754546358</button></span>
-
+				</div>
  			</section>
  		</main>
  		<footer></footer>
